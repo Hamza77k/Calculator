@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="wrapperTop">
+      <input type="text" id="display" readonly value="">
+    </div>
+    <div class="wrapperBottom">
+      <button onclick="appendNum(7)" id="sevenbtn">7</button>
+      <button onclick="appendNum(8)" id="eightbtn">8</button>
+      <button onclick="appendNum(9)" id="ninebtn">9</button>
+      <button onclick="appendDivide('/'); operatorValue();" id="divBtn">/</button>
+      <button onclick="appendNum(4)" id="fourbtn">4</button>
+      <button onclick="appendNum(5)" id="fivebtn">5</button>
+      <button onclick="appendNum(6)" id="sixbtn">6</button>
+      <button onclick="appendMultiply('x'); operatorValue();" id="mulBtn">X</button>
+      <button onclick="appendNum(1)" id="onebtn">1</button>
+      <button onclick="appendNum(2)" id="twobtn">2</button>
+      <button onclick="appendNum(3)" id="threebtn">3</button>
+      <button onclick="appendSubtract('-'); operatorValue();" id="subBtn">-</button>
+      <button onclick="clearDisplay('')" id="clearBtn">C</button>
+      <button onclick="appendNum(0)" id="zerobtn">0</button>
+      <button onclick="operate()" id="equalsBtn">=</button>
+      <button onclick="appendPlus(); operatorValue();" id="addBtn">+</button>
+      <button onclick="deleteLastLetter()" id="delBtn">Del</button>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
